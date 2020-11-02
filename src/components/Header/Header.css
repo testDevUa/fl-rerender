@@ -1,0 +1,22 @@
+.header {
+    padding: 32px 0;
+    background-color: #fff;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav__item {
+    display: block;
+    margin-right: 30px;
+    text-decoration: none;
+    color: #1d1d1f;
+    font-weight: 600;
+    transition: all .15s linear;
+}
+
+.nav__item:hover {
+    color: #E3655B;
+}
