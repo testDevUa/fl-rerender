@@ -8,11 +8,11 @@ const Posts = (props) => {
 
     let postTextUpdate = () => {
         let text = inpText.current.value;
-        props.postTextUpdate(text);
+        props.dispatch({ type: 'UPDATE-POST-TEXT', text: `${text}`})
     }
 
     let postAdd = () => {
-        props.postAdd();        
+        props.dispatch({ type: 'ADD-POST' });     
     }
 
     let allPosts = props.posts.posts.map( (elem,index) => <Post key={index} text={elem.text} />)

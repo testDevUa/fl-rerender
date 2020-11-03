@@ -9,7 +9,7 @@ function App(props) {
     <div className="App">
       <Header />
       <div className="App-wrapper-content">
-        <Route path='/Posts' render={() => <Posts key="editor1" posts={props.state.postsPage} postTextUpdate={props.postTextUpdate} postAdd={props.postAdd}/>}/>
+        <Route path='/Posts' render={() => <Posts key="editor1" posts={props.state.postsPage} dispatch={props.dispatch} />}/>
         <Route path='/About' render={About} />
       </div>
     </div>
